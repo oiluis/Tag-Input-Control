@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
 <!-- your manifest can not contain some symbols such as apostrophes-->
-  <control namespace="Eax" constructor="TagInputControl" version="1.0.11" display-name-key="TagInputControl" description-key="A multi language tag input control for Model-Driven Apps" control-type="standard">
+  <control namespace="Eax" constructor="TagInputControl" version="1.0.12" display-name-key="TagInputControl" description-key="A multi language tag input control for Model-Driven Apps" control-type="standard">
     
     <property name="Tags" display-name-key="Tags" description-key="Placeholder for the tag input control. Nothing will be kept on this field." of-type="Multiple" usage="bound" required="false" />
 
