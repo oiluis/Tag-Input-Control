@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" 
+    xmlns="" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+    xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- TRANSLATIONS ARE LISTED BELOW -->
+  
+  <!-- Input Texts -->
+  <data name="AddTagKey" xml:space="preserve">
+    <value>Add tag</value>
+    <comment>Input text placeholder</comment>
+  </data>
+
+  <!-- Error Messages -->
+  <data name="DefaultErrorMessageKey" xml:space="preserve">
+    <value>There has been an error with the Input Tag Control.</value>
+    <comment>Display text when any unexpected error ocurrs</comment>
+  </data>
+
+  <data name="RefreshPageTryAgainKey" xml:space="preserve">
+    <value>Refresh the page and try again.</value>
+    <comment>This message will be displayed right after the main error message as a recommended action.</comment>
+  </data>
+
+  <data name="ErrTagCantBeAddedKey" xml:space="preserve">
+    <value>The Tag {tagName} can't be added.</value>
+    <comment>Display text when a Tag can't be added because of an internal error. The {tagName} will be replaced by a variable.</comment>
+  </data>
+
+  <data name="ErrTagWasNotAddedKey" xml:space="preserve">
+    <value>The Tag {tagName} was not added.</value>
+    <comment>Display text when a Tag was not added because of an internal error. The {tagName} will be replaced by a variable.</comment>
+  </data>
+
+  <data name="ErrTagWasNotRemovedKey" xml:space="preserve">
+    <value>The Tag {tagName} was not removed.</value>
+    <comment>Display text when a Tag was not removed because of an internal error. The {tagName} will be replaced by a variable.</comment>
+  </data>
+
+  <data name="ErrSearchTagsKey" xml:space="preserve">
+    <value>There was an error on searching Tags by name.</value>
+    <comment>Display text when the Tag Servie Manager couldn't search a Tag by name.</comment>
+  </data>  
+
+  <data name="ErrSearchTagTranslationsKey" xml:space="preserve">
+    <value>There was an error on searching Tag's Translations.</value>
+    <comment>Display text when the Tag Servie Manager couldn't search the Tag and its Translations by name.</comment>
+  </data>  
+
+  <data name="ErrFindTagByNameKey" xml:space="preserve">
+    <value>There was an error on finding the Tag by name {tagName}.</value>
+    <comment>Display text when the Tag Servie Manager find or get a Tag by name. The {tagName} will be replaced by a variable.</comment>
+  </data>  
+
+  <data name="ErrGetAllTagsByRecordKey" xml:space="preserve">
+    <value>There was an error on loading all tags of this record.</value>
+    <comment>Display text when the Tag Servie Manager was not able to get all Tags of the current entity.</comment>
+  </data>    
+
+  <data name="ErrTagRelationshipKey" xml:space="preserve">
+    <value>Couldn't relate the Tag {tagName} with the given record.</value>
+    <comment>Display text when the Tag Servie Manager couldn't create a relationship between the Tag and the current entity. The {tagName} will be replaced by a variable.</comment>
+  </data> 
+
+  <data name="ErrTagCreationKey" xml:space="preserve">
+    <value>The Tag {tagName} was not created.</value>
+    <comment>Display text when the Tag Servie Manager couldn't create the Tag. The {tagName} will be replaced by a variable.</comment>
+  </data>
+
+  <data name="ErrTagCreationRelationshipKey" xml:space="preserve">
+    <value>There was an error on adding or associating the given Tag to the current entity.</value>
+    <comment>Display text when the Tag Servie Manager couldn't create or associate the Tag.</comment>
+  </data>   
+
+  <data name="ErrTagCreatedLCIDNotFoundKey" xml:space="preserve">
+    <value>Tag {tagName} was created but the language {languageLCID} was not found.</value>
+    <comment>Display text when the Tag Servie Manager created the Tag but couldn't find the language record by the LCID. The {tagName} and {languageLCID} will be replaced by a variable.</comment>
+  </data>   
+
+  <data name="ErrTagCreatedLanguageNotSetKey" xml:space="preserve">
+    <value>The Tag {tagName} was created bu the language {languageLCID} was not set.</value>
+    <comment>Display text when the Tag Servie Manager created the Tag but couldn't create the one to many relationship between the Tag and the Language. The {tagName} and {languageLCID} will be replaced by a variable.</comment>
+  </data> 
+
+  <data name="ErrTagRemovalKey" xml:space="preserve">
+    <value>There was an erro on removing the given Tag from the current record.</value>
+    <comment>Display text when the Tag Servie Manager couldn't remove the many to many relationship between the Tag and the current Entity.</comment>
+  </data>
+
+  <data name="ErrEntitySetNotFoundKey" xml:space="preserve">
+    <value>EntitySetName not found for the Entity '{entityName}'.</value>
+    <comment>Display text when the Tag Servie Manager couldn't find the metadata (EntitySetName) of the current entity. The {entityName} will be replaced by a variable.</comment>
+  </data>    
+
+  <data name="ErrManyToManyRelationshipNotFoundKey" xml:space="preserve">
+    <value>Many To Many Relationship Name not found for the Entity '{entityName}'. Make sure you created a many to many relationship between this entity and the Tag entity.</value>
+    <comment>Display text when the Tag Servie Manager couldn't find the metadata (Many To Many Relationship Name) of the current entity. The {entityName} will be replaced by a variable.</comment>
+  </data>   
+
+   <data name="ErrFindLCIDKey" xml:space="preserve">
+    <value>There was an error on finding the language by LCID '{lcid}'.</value>
+    <comment>Display text when the Tag Servie Manager couldn't find the language record by the given LCID. The {lcid} will be replaced by a variable.</comment>
+  </data>                  
+
+</root>

@@ -1,0 +1,21 @@
+.tagify {
+    --tag-pad:0.25em 0.5em;
+    --tags-border-color:transparent;
+    --tags-focus-border-color:rgb(102, 102, 102);
+    --tags-hover-border-color:rgb(102, 102, 102);
+    /*border-radius: 2px;*/
+    min-height: 33px;
+}
+
+.Eax\.TagInputControl .tagify__input {
+    text-align: left;
+    margin-left: 0;
+}
+
+.Eax\.TagInputControl .tagify__tag>div>*{
+    padding-bottom: 0.2em;
+}
+
+.Eax\.TagInputControl .tagify__tag {
+    margin: 4px 0 1px 5px;
+}

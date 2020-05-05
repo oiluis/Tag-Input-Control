@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+<!-- your manifest can not contain some symbols such as apostrophes-->
+  <control namespace="Eax" constructor="TagInputControl" version="1.0.11" display-name-key="TagInputControl" description-key="A multi language tag input control for Model-Driven Apps" control-type="standard">
+    
+    <property name="Tags" display-name-key="Tags" description-key="Placeholder for the tag input control. Nothing will be kept on this field." of-type="Multiple" usage="bound" required="false" />
+
+    <!-- General properties -->
+    <property name="Scope" display-name-key="Scope" description-key="The Scope or Tag Collection Name. I.e.: Skills, Topics, Colors. If there is no need to use scopes, the default scope will be used to create the tags." of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="MaxTags" display-name-key="Max Tags" description-key="Defines the limit of tag association or creation. Default: 20." of-type="Whole.None" usage="input" required="false" />
+    <property name="Placeholder" display-name-key="Placeholder" description-key="The Placeholder text that will be shown to the user when adding a new tag. Default: Add tag." of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="EnforceWhitelist" display-name-key="Enforce Whitelist" description-key="Allow to add only existing tags. Default: false." of-type="TwoOptions" usage="input" required="false" />
+    <property name="AllowDuplicates" display-name-key="Allow Duplicates" description-key="Allow duplicated entries. Default: false." of-type="TwoOptions" usage="input" required="false" />
+    <property name="AddTagsOnBlur" display-name-key="Add Tags on Blur" description-key="Add tags on Blur. Default: false." of-type="TwoOptions" usage="input" required="false" />
+    
+    <!-- Not considered properties -->
+    <property name="Rows" display-name-key="Rows" description-key="(Not considered in this release) Defines the height of the Input. Default: 1." of-type="Whole.None" usage="input" required="false" />
+    <property name="AllowUpdate" display-name-key="Allow Update" description-key="(Not considered in this release) Allow users to update the Tag. Default: false." of-type="TwoOptions" usage="input" required="false" />
+
+    <!-- Autocomplete properties -->
+    <property name="AutocompleteEnabled" display-name-key="Autocomplete Enabled" description-key="Defines if Autocomplete function is enabled or not. Default: true." of-type="TwoOptions" usage="input" required="false" />
+    <property name="AutocompleteActivationThreshold" display-name-key="Autocomplete Activation Threshold" description-key="minimum charactes typed to show the dropdown. Default: 2." of-type="Whole.None" usage="input" required="false" />
+    <property name="AutocompletePosition" display-name-key="Autocomplete Position" description-key="Defines position of the Dropdown. Default: all." of-type="Enum" usage="input" required="false">
+      <value name="all" display-name-key="All" description-key="Normal, full-width design" default="true">all</value>
+      <value name="input" display-name-key="Input" description-key="Will place the dropdown next to the input">input</value>
+      <value name="text" display-name-key="Text" description-key="Will place the dropdown next to the caret">text</value>
+    </property>
+    <property name="AutocompleteCloseOnSelect" display-name-key="Autocomplete Close on Select" description-key="Defines if the autocomplete dropdown will be closed or not when the user picks an option. Default: true." of-type="TwoOptions" usage="input" required="false" />
+    <property name="AutocompleteHighlightFirst" display-name-key="Autocomplete Highlight First" description-key="Defines if the first item on the autocomplete will be highlighted. Default: false." of-type="TwoOptions" usage="input" required="false" />
+    <property name="AutocompleteMaxItems" display-name-key="Autocomplete Max Items" description-key="Defines the max results to show on the autocomplete dropdown. Default: 10." of-type="Whole.None" usage="input" required="false" />
+    <property name="AutocompleteEnableFuzzySearch" display-name-key="Autocomplete Enable FuzzySearch" description-key="Enables filtering dropdown items values by string containing and not only beginning. Default: true." of-type="Whole.None" usage="input" required="false" />
+
+    <!-- Tech properties -->
+    <property name="ManyToManyRelationshipName" display-name-key="Many to Many Relationship Name" description-key="The internal name (sensitive case) of the many to many CDS relationship with the entities Tag. Default: The many to many relationship name where the secondary entity is equals to Tag." of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="IntersectEntityName" display-name-key="Intersect Entity Name" description-key="The internal name (lower case) on the Intersect (associate) Entity between the Tag and the current Entity. Default: The Intersect Entity Name where the secondary entity is equals to Tag." of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="AppInsightsInstrumentationKey" display-name-key="AppInsights Instrumentation Key" description-key="In case you want to log any exception of the component, provide the Azure Applicaiton Insights Instrumentation Key. Default: ." of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="DefaultLanguageLCID" display-name-key="Default Language LCID" description-key="Defines the default language LCID. In case there is no default language LCID, the component will consider the browser language and if the info is not present it will consider en-us as default." of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="TagInputRegexPattern" display-name-key="Tag Input Regex Pattern" description-key="Regex pattern to validate the input of a new Tag. Default: /^.{2,50}$/" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="WebApiBasePath" display-name-key="Web API base path" description-key="Defines the base path of the Web API endpoit. I.e.: /api/data/v9.1 (keep this string format in case you want to change it)" of-type="SingleLine.Text" usage="input" required="false" />
+
+
+    <!-- Deprecated -->
+    <!-- If you want to display the control on readonly mode, you should use business rules or the form editor -->
+    <!--<property name="ReadOnly" display-name-key="Readonly" description-key="Defines if the control is on read-only mode or not." of-type="TwoOptions" usage="input" required="false" />-->
+
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/tagify.min.css" order="1" />
+      <css path="css/TagInputControl.css" order="2" />
+      <resx path="strings/TagInputControl.1033.resx" version="1.0.0" />
+    </resources>
+    
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+  </control>
+</manifest>
